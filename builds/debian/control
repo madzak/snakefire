@@ -1,0 +1,17 @@
+Source: snakefire
+Section: net
+Priority: optional
+Maintainer: Zakaria Zajac <zak@madzak.com>
+Build-Depends: debhelper (>= 7.0.50~), python-all-dev (>=2.6), python-support, python-setuptools
+Standards-Version: 3.9.2
+Homepage: https://github.com/mariano/snakefire
+
+Package: snakefire
+Architecture: any
+Depends: ${misc:Depends}, python-pyfire, python-openssl, ${python:Depends}
+Description: a linux campfire client written in python qt 
+
+ utilizing the python-pyfire library based on twisted to connect to campfire's
+ api, snakefire provides a customizable chat experience with inline images,
+ drag and drop uploads, and custom chat styles.
+

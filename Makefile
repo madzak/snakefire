@@ -23,6 +23,14 @@ install:
 buildrpm:
 		$(PYTHON) setup.py bdist_rpm --post-install=rpm/postinstall --pre-uninstall=rpm/preuninstall
 
+buildsrc:
+		# build the source package in the parent directory
+		# then rename it to project_version.orig.tar.gz
+		$(PYTHON) setup.py sdist $(COMPILE) --dist-dir=../
+		rename -f 's/$(PROJECT)-(.*)\.tar\.gz/$(PROJECT)_$$1\.orig\.tar\.gz/' ../*
+		# build the package
+		dpkg-buildpackage -i -I -rfakeroot -S
+
 builddeb:
 		# build the source package in the parent directory
 		# then rename it to project_version.orig.tar.gz

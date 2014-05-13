@@ -31,7 +31,7 @@ sudo apt-get update
 sudo apt-get install snakefire
 ```
 
-If you're using **KDE** additionally install `snakefire-kde`:
+If you're using **Kubuntu** additionally install `snakefire-kde`:
 
 ```
 sudo apt-get install snakefire-kde

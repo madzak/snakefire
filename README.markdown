@@ -21,6 +21,22 @@ you can install it with (if you don't have packer, you should really [get it] [p
 
         $ packer -S snakefire
 
+### Ubuntu
+
+Open a terminal (`Ctrl+Alt+T`) and run:
+
+```term
+sudo apt-add-repository -y ppa:rael-gc/snakefire
+sudo apt-get update
+sudo apt-get install snakefire
+```
+
+If you're using **Kubuntu** additionally install `snakefire-kde`:
+
+```
+sudo apt-get install snakefire-kde
+```
+
 ## MANUAL INSTALLATION ##
 
 ### Requirements ###

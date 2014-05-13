@@ -1,5 +1,5 @@
-snakefire (1.5.0ubuntu1) saucy; urgency=low
+snakefire (1.0.5-1) trusty; urgency=low
 
-  * New upstream release with a few bug fixes 
+  * Initial release
 
- -- Zakaria Zajac -madzak- <zak@madzak.com>  Mon, 24 Feb 2014 22:00:45 -0800
+ -- Rael Gugelmin Cunha <rael.gc@gmail.com>  Fri, 09 May 2014 14:39:48 -0300

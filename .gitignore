@@ -7,3 +7,4 @@
 build/
 snakefire.egg-info/
 dist/
+debian/
